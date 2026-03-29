@@ -59,6 +59,73 @@
 
     <!-- JS Link -->
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget">
+        <!-- Floating Button -->
+        <button id="chatbot-toggle" class="chatbot-toggle" title="Open AI Assistant">
+            <span class="chat-icon">💬</span>
+            <span class="notification-badge" id="notification-badge" style="display: none;">1</span>
+        </button>
+
+        <!-- Chat Window -->
+        <div id="chatbot-window" class="chatbot-window">
+            <!-- Chat Header -->
+            <div class="chatbot-header">
+                <div class="header-info">
+                    <h3>🤖 AI Assistant</h3>
+                    <p>Ask me about AI tools</p>
+                </div>
+                <div class="header-actions">
+                    <button id="voice-toggle" class="header-btn" title="Toggle voice output">
+                        <span class="voice-icon">🔊</span>
+                    </button>
+                    <button id="clear-chat" class="header-btn" title="Clear chat">🗑️</button>
+                    <button id="chatbot-close" class="header-btn close-btn" title="Close">✕</button>
+                </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>👋 Hi! I'm your AI Assistant. Ask me about video editing, coding, image generation, presentations, audio tools, writing, marketing, productivity tools, image editing, video generation, or education!</p>
+                    </div>
+                    <span class="message-time">Now</span>
+                </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div id="typing-indicator" class="typing-indicator" style="display: none;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Chat Input Area -->
+            <div class="chatbot-input-area">
+                <div class="input-controls">
+                    <input 
+                        type="text" 
+                        id="chatbot-input" 
+                        class="chatbot-input" 
+                        placeholder="Type or click 🎤 to speak..."
+                        autocomplete="off"
+                    >
+                    <button id="voice-input-btn" class="voice-input-btn" title="Voice input">
+                        <span class="mic-icon">🎤</span>
+                    </button>
+                    <button id="send-btn" class="send-btn" title="Send message">
+                        <span class="send-icon">→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
 
 </body>
 </html>
